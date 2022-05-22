@@ -27,6 +27,15 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 
+/* Se supone que se podría importar esta View para plotear un mapa,
+pero directamente da error al intentar importarlo, dice que no encuentra el módulo.
+De todas formas solo por incluir la dependencia, al querer levantar el proyecto tira:
+No matching configuration of project :react-native-heremaps was found. The consumer was configured to find a runtime of a component, preferably optimized for Android, as well as attribute 'com.android.build.api.attributes.BuildTypeAttr' with value 'debug' but:
+          - None of the consumable configurations have attributes.
+*/
+// import { MapView } from 'react-native-heremaps';
+
+
 const Section: React.FC<{
   title: string;
 }> = ({children, title}) => {
